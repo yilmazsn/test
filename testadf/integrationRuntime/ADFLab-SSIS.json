@@ -1,0 +1,28 @@
+{
+	"name": "ADFLab-SSIS",
+	"properties": {
+		"type": "Managed",
+		"description": "ADFLab-SSIS desc",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US 2",
+				"nodeSize": "Standard_D1_v2",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 1
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "adflabsqlbrlfv.database.windows.net",
+					"catalogAdminUserName": "labadmin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
