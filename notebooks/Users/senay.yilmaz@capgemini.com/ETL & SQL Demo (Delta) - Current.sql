@@ -1,6 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %python
 -- MAGIC # There are sample datasets available for use..  copy the 
+-- MAGIC # test for git
 -- MAGIC display(dbutils.fs.ls("/databricks-datasets"))
 -- MAGIC display(dbutils.fs.ls("/databricks-datasets/amazon"))
 
